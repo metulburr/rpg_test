@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="30" height="30" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="terst" tilewidth="32" tileheight="32">
+  <image source="../graphics/grass-tiles-2-small.png" width="384" height="192"/>
+ </tileset>
+ <objectgroup name="Object Layer 1" width="30" height="30">
+  <object gid="7" x="544" y="288"/>
+  <object gid="7" x="544" y="192"/>
+  <object gid="7" x="576" y="64"/>
+  <object gid="7" x="576" y="160"/>
+ </objectgroup>
+ <layer name="Tile Layer 1" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzlVtlqAzEMlFN6ky29UhIKfepC2w/J//9RFZDJZCp5LdM+VTCs115rLFnHFhEpv4iV9Mm6gWLPD8Wn6YxQv+/lXdL1qjhXXCjeFFOAAvt6BP0T8d4rHhRf4vt1onGPROef5OjvrWJneouc3gOeOePnFi/bX8/izaPNPTIr3g0zvM+AO+BDOwvMZXlvDBvFpY2vDM+Ka8UebPViYYT3oPvRnht7Vr4nw16O91r1I/8I746wpfEBZ3IarxxTlXckj1APckw0F93rSP7y+W8dniI/77jQ/hFe3PtCOusa+5j5qn96eTnvsWas4Z3rCXPWb3oE97GOqH6uFtYy9kY1PuL0anTWz14M9fRZrh0ZP3v3m7HVy+EM76idXLP+2s8tm3uE85F7a8b+rJ89m1v/XVH+Zv3M9YH7C+v2YizrZ44LL2aW8nqUl+ug95/F9cz7H8rmb6u3Yb+faA3nR+I5il9vjee4X2R4uf94vWhpLlsn/5t8A8ysEac=
+  </data>
+ </layer>
+</map>

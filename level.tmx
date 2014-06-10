@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="15" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="terst" tilewidth="32" tileheight="32">
+  <image source="grass-tiles-2-small.png" width="384" height="192"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJyFk+sKwjAMhduKl05W8dLJVBAH+kfW19j7v5EJnMChOvzxsTTNyaVrG+dcETqhEUag6yhk+AesC+2r3c7ghRvluAoBPJAvzNBCuxRWwl1IoCCn/6PdCwfhjViPmgPlqrHee+GCfB6+iL7ntHUfli9gfj2vJ3gBtpUdaewMG0JzrGFvQEZvE9W0sxmwf6QeMmlOYKI5E9UdcQ5GX9nKgupZ/QitJ0IVlyqfxRXUbivt9kesr2bOmJnvoMafKZ73WDtCH9x3r3yvE33N7lBXc9jdtjdj7ypjL8LH/+IDuh8N7w==
+  </data>
+ </layer>
+ <objectgroup color="#ff0000" name="collisions" width="15" height="15">
+  <object x="448" y="0" width="32" height="480"/>
+  <object x="0" y="0" width="32" height="480"/>
+  <object x="32" y="224" width="256" height="64"/>
+  <object x="160" y="352" width="32" height="32"/>
+  <object x="32" y="448" width="416" height="32"/>
+  <object x="32" y="0" width="416" height="32"/>
+  <object x="288" y="32" width="64" height="96"/>
+ </objectgroup>
+</map>
