@@ -9,7 +9,7 @@ class Level:
         self.full_map = self.renderer.make_map()
         self.viewport = self.make_viewport(self.full_map)
         self.level_surface = self.make_level_surface(self.full_map)
-        self.blockers = self.make_blockers('collisions')
+        self.blockers = self.make_blockers('collision')
         
     def make_level_surface(self, full_map):
         map_rect = full_map.get_rect()
@@ -29,12 +29,12 @@ class Level:
     def make_blockers(self, blocker_name):
         blockers = pg.sprite.Group()
         for obj in self.renderer.tmx.getObjects():
-            #print(object.__dict__)
             properties = obj.__dict__
             if properties['name'] == blocker_name:
                 x = properties['x']
                 y = properties['y']
-                width = height = 32
+                width = properties['width']
+                height = properties['height']
                 blocker = pg.sprite.Sprite()
                 blocker.state = None
                 blocker.rect = pg.Rect(x, y, width, height)

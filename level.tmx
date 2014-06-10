@@ -9,12 +9,12 @@
   </data>
  </layer>
  <objectgroup color="#ff0000" name="collisions" width="15" height="15">
-  <object x="448" y="0" width="32" height="480"/>
-  <object x="0" y="0" width="32" height="480"/>
-  <object x="32" y="224" width="256" height="64"/>
-  <object x="160" y="352" width="32" height="32"/>
-  <object x="32" y="448" width="416" height="32"/>
-  <object x="32" y="0" width="416" height="32"/>
-  <object x="288" y="32" width="64" height="96"/>
+  <object name="collision" x="448" y="0" width="32" height="480"/>
+  <object name="collision" x="0" y="0" width="32" height="480"/>
+  <object name="collision" x="32" y="224" width="256" height="64"/>
+  <object name="collision" x="160" y="352" width="32" height="32"/>
+  <object name="collision" x="32" y="448" width="416" height="32"/>
+  <object name="collision" x="32" y="0" width="416" height="32"/>
+  <object name="collision" x="288" y="32" width="64" height="96"/>
  </objectgroup>
 </map>
