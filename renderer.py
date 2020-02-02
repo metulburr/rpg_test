@@ -13,11 +13,11 @@ class Renderer:
     def render(self, surface):
         tw = self.tmx.tilewidth
         th = self.tmx.tileheight
-        gt = self.tmx.getTileImageByGid
+        gt = self.tmx.get_tile_image_by_gid
         if self.tmx.background_color:
             surface.fill(self.tmx.background_color)
-        for layer in self.tmx.visibleLayers:
-            if isinstance(layer, pytmx.TiledLayer):
+        for layer in self.tmx.visible_layers:
+            if isinstance(layer, pytmx.TiledTileLayer):
                 for x, y, gid in layer:
                     tile = gt(gid)
                     if tile:

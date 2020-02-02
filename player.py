@@ -8,7 +8,7 @@ class Player:
         self.collision_color = (0,0,255)
         self.color = self.color_init
         self.image.fill(self.color)
-        self.rect = self.image.get_rect(center=center)
+        self.rect = self.image.get_rect(topleft=(100,100))
         self.speed = 3
         
     def move(self, x, y):
@@ -24,12 +24,14 @@ class Player:
             self.move(-1,0)
         if keys[pg.K_RIGHT]:
             self.move(1,0)
-        
+        self.check_collision(blocker)
+                
+    def check_collision(self, blocker):
         if blocker:
             self.color = self.collision_color
         else:
             self.color = self.color_init
-        
+
     def render(self, screen):
         self.image.fill(self.color)
         screen.blit(self.image, self.rect)

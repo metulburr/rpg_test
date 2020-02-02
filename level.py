@@ -28,7 +28,7 @@ class Level:
         
     def make_blockers(self, blocker_name):
         blockers = pg.sprite.Group()
-        for obj in self.renderer.tmx.getObjects():
+        for obj in self.renderer.tmx.objects:
             properties = obj.__dict__
             if properties['name'] == blocker_name:
                 x = properties['x']
